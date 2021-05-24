@@ -1,0 +1,325 @@
+html{
+  scroll-behavior: inherit;
+}
+/** global style **/
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(../fonts/MaterialIcons-Regular.woff2) format("woff2"), url(../fonts/MaterialIcons-Regular.woff) format("woff"),
+    url(../fonts/MaterialIcons-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "GT-Walsheim-Bold";
+  src: url(../fonts/GT-Walsheim-Bold.otf);
+}
+@font-face {
+  font-family: "GT-Walsheim-Regular";
+  src: url(../fonts/GT-Walsheim-Regular.ttf);
+}
+body {
+  font-family: "GT-Walsheim-Regular";
+}
+body.rtl{
+  direction: rtl;
+}
+a,
+a:hover {
+  cursor: pointer;
+}
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+*{
+  font-family: 'Poppins', sans-serif;
+}
+.navbar .active{
+  color: #ff3f3f !important;
+}
+.navbar .nav-item .nav-link{
+  font-weight: 550;
+}
+.navbar .nav-item .nav-link:hover{
+  color: #ff3f3f !important;
+}
+.navbar-nav .nav-item .nav-link{
+  /*padding: 0;*/
+}
+
+
+
+/** line logo **/
+.logo {
+  color: #fff;
+  position: relative;
+}
+.logo:hover {
+  color: #fff;
+}
+.logo h1 {
+  font-size: 49px;
+  text-transform: capitalize;
+  font-family: "GT-Walsheim-Bold";
+}
+.logo span {
+  font-size: 25px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 42px;
+  right: 0;
+}
+
+/** menu **/
+.navbar{
+  background-color: #000 !important;
+  padding: 10px 0;
+}
+.menu {
+  
+  display: flex;
+
+  align-items: center;
+}
+.nav-link {
+  text-transform: capitalize;
+  color: #fff !important;
+  cursor: pointer;
+  /*font-weight: bold;*/
+  font-family: verdana;
+}
+.nav-btn {
+  padding: 3px 0.5rem;
+}
+.nav-btn a {
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 14.7px;
+  background-color: #ff3f3f;
+  font-size: 16px;
+  text-align: center;
+  font-family: "GT-Walsheim-Bold";
+  text-transform: capitalize;
+  color: #000;
+  padding: 0 22px !important;
+}
+.nav-item:not(.nav-btn) .nav-link:hover,
+.nav-item:not(.nav-btn) .nav-link:active,
+.nav-item:not(.nav-btn) .nav-link:focus,
+.nav-item:not(.nav-btn).active .nav-link {
+  /*color: #ff3f3f !important;*/
+  font-family: "GT-Walsheim-Bold";
+  font-family: verdana;
+
+}
+
+.nav-item:not(.nav-btn) .nav-link:hover:after,
+.nav-item:not(.nav-btn) .nav-link:active:after,
+.nav-item:not(.nav-btn) .nav-link:focus:after,
+.nav-item.active .nav-link:after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  height: 1px;
+  bottom: -5px;
+  position: relative;
+}
+.yellow .nav-link {
+  color: #ff3f3f;
+}
+.yellow .nav-link:hover,
+.yellow .nav-link:active,
+.yellow .nav-link:focus {
+  color: #ff3f3f !important;
+}
+
+.yellow .nav-link:hover:after,
+.yellow .nav-link:active:after,
+.yellow .nav-link:focus:after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #ff3f3f ;
+  height: 1px;
+}
+
+.head img {
+  max-width: 139px;
+  width: 100%;
+}
+
+/** links-sec **/
+.links-sec {
+  background-color: #282828;
+  color: #fff;
+  padding-top: 84px;
+  padding-bottom: 72px;
+}
+.links-sec h3 {
+  font-size: 30px;
+  font-family: "GT-Walsheim-Bold";
+  text-transform: capitalize;
+  margin-bottom: 22px;
+}
+.links-sec p {
+  font-size: 17px;
+  margin-bottom: 0;
+}
+
+.links-sec .input-group {
+  margin-top: 27px;
+}
+
+.links-sec input,
+.links-sec .input-group-text {
+  border-radius: 0;
+  height: 31px;
+}
+.links-sec .input-group-text {
+  background-color: #ff3f3f;
+  color: #000;
+  font-size: 14px;
+  border: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.links-sec input {
+  font-size: 14px;
+  background-color: #414040;
+  border: none;
+}
+
+.links-sec input::-webkit-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.links-sec input:-ms-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.links-sec input::placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.links-sec ul li {
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+/** footer **/
+footer {
+  background-color: #141414;
+  color: #fff;
+}
+footer .footer-links ul li a{
+  font-weight: bold;
+}
+footer p,
+footer ul {
+  margin-bottom: 0;
+}
+footer p {
+  font-size: 17px;
+  color: #fff;
+  margin-bottom: 0;
+}
+footer p::first-letter {
+  text-transform: capitalize;
+}
+
+footer p span {
+  color: #ff3f3f;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    background-color: #141414;
+    width: 200px;
+    text-align: center;
+    right: 35px;
+    /*margin-left: auto;*/
+    top: 58px;
+    z-index: 1;
+  }
+  .navbar-toggler i {
+    color: #fff;
+  }
+  .nav-link:hover:after,
+  .nav-link:active:after,
+  .nav-link:focus:after,
+  .nav-item.active .nav-link:after,
+  .yellow .nav-link:hover:after,
+  .yellow .nav-link:active:after,
+  .yellow .nav-link:focus:after {
+    display: none;
+  }
+  .navbar-nav .nav-item:not(:last-of-type) .nav-link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #212529;
+    position: relative;
+    bottom: -5px;
+  }
+  .nav-btn {
+    padding: initial;
+  }
+  .nav-btn a {
+    background-color: transparent;
+    width: initial;
+    height: initial;
+    line-height: initial;
+    color: #fff;
+    font-family: "GT-Walsheim-Regular";
+    padding: 0.5rem 0 !important;
+  }
+
+  .nav-link {
+    padding: 5px 0;
+  }
+}
+
+/*Top-up Button Starts*/
+.top-btn #myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color: #141414;
+    background-color: #ff3f3f;
+    padding: 10px;
+    border-radius: 10px;
+    /*scroll-behavior: smooth;*/
+  }
+.top-btn #myBtn:hover{
+    background-color: #606060;
+    cursor: pointer;
+  }
+
+/*Top-up Button Ends*/
+
+@media only screen and (max-width: 650px) {
+  footer div.d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+  }
+}
